@@ -1,0 +1,45 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;  
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+main{
+    display: grid;
+    grid-template-columns: repeat(12, 1fr) ;
+    grid-template-rows: 100px 500px 100px;
+    grid-gap: 10px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "m m m m c c c c c c c c"
+    "r r r r r r r r r r r r";
+}
+body{
+    background-color: antiquewhite;
+    padding: 10px;
+
+}
+header, nav, article, footer{
+    padding: 20px;
+    font-size: 3em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+header{
+    background-color: rgb(255, 83, 112);
+    grid-area: h;
+}
+nav{
+    background-color: rgb(255, 103, 129);
+    grid-area: m;
+}
+article{
+    background-color: rgb(255, 142, 161);
+    grid-area: c;
+}
+footer{
+    background-color: pink;
+    grid-area: r;
+}
